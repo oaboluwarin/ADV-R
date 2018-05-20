@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "babel-watch lib/server.js",
+    "lint": "eslint ./ || true",
     "test": "jest -u --coverage",
     "test:dev": "jest --watch",
     "webpack": "webpack -wd"
