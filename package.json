@@ -7,17 +7,21 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "babel-watch lib/server.js"
+    "dev": "babel-watch lib/server.js",
+    "webpack": "webpack -wd"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
+    "babel-polyfill": "^6.26.0",
     "eslint": "^4.19.1",
-    "eslint-plugin-react": "^7.8.2"
+    "eslint-plugin-react": "^7.8.2",
+    "webpack-cli": "^2.1.3"
   },
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "babel-watch": "^2.0.7",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
