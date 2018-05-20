@@ -6,7 +6,7 @@
   "author": "oreoluwade",
   "license": "MIT",
   "private": true,
-  "scripts" : {
+  "scripts": {
     "dev": "babel-watch lib/server.js"
   },
   "devDependencies": {
@@ -16,11 +16,13 @@
   },
   "dependencies": {
     "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-watch": "^2.0.7",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "react-dom": "^16.3.2",
+    "webpack": "^4.8.3"
   }
 }
