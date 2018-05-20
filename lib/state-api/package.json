@@ -1,0 +1,9 @@
+{
+  "name": "state-api",
+  "version": "1.0.0",
+  "description": "managing state data",
+  "main": "lib/index.js",
+  "repository": "https://github.com/oreoluwade/state-api",
+  "author": "oreoluwade",
+  "license": "MIT"
+}
