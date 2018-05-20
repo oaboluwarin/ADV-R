@@ -15,7 +15,7 @@
     "commonjs": true,
     "es6": true,
     "node": true,
-    "jest": true,
+    "jest": true
   },
   "rules": {
     "react/prop-types": ["off"],
@@ -24,6 +24,6 @@
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
     "no-console": ["warn", { "allow": ["info", "error"] }],
-    "arrow-parens": ["error", "always"],
+    "arrow-parens": ["error", "always"]
   }
 }
