@@ -6,6 +6,9 @@
   "author": "oreoluwade",
   "license": "MIT",
   "private": true,
+  "scripts" : {
+    "start": "babel-watch lib/server.js"
+  },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
     "eslint": "^4.19.1",
