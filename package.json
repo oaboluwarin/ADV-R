@@ -6,7 +6,7 @@
   "author": "oreoluwade",
   "license": "MIT",
   "scripts": {
-    "dev": "babel-watch lib/server.js",
+    "dev": "NODE_PATH=./lib babel-watch lib/server.js",
     "lint": "eslint ./ || true",
     "test": "jest -u --coverage",
     "test:dev": "jest --watch",
