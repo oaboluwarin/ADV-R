@@ -1,7 +1,10 @@
 {
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "plugins": ["react"],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 6,
+    "experimentalObjectRestSpread": true,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
@@ -14,22 +17,13 @@
     "node": true,
     "jest": true,
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true,
-      "jsx": true,
-    },
-    "sourceType": 'module',
-  },
-  "plugins": ["react"],
   "rules": {
     "react/prop-types": ["off"],
-    "indent": ["error", 2, { SwitchCase: 1 }],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
-    "no-console": ["warn", { allow: ["info", "error"] }],
+    "no-console": ["warn", { "allow": ["info", "error"] }],
     "arrow-parens": ["error", "always"],
-  },
+  }
 }
