@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": true,
   "scripts" : {
-    "start": "babel-watch lib/server.js"
+    "dev": "babel-watch lib/server.js"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
