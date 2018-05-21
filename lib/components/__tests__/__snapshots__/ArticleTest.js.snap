@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article renders the Article component correctly 1`] = `
+exports[`<Article /> should return render the article Component correctly 1`] = `
 <div
   style={
     Object {
