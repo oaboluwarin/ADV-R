@@ -13,7 +13,9 @@
     "webpack": "webpack -wd"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "<rootDir>/lib/util/testSetup.js"
+    "setupFiles": [
+      "<rootDir>/lib/util/testSetup.js"
+    ]
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
