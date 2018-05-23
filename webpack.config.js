@@ -1,5 +1,4 @@
 const path = require('path');
-// const webpack = require('webpack');
 
 const config = {
   resolve: {
@@ -29,7 +28,12 @@ const config = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: 'babel-loader'
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['react', 'env', 'stage-2']
+          }
+        }
       }
     ]
   },
