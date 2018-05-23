@@ -10,7 +10,9 @@
     "lint": "eslint ./ || true",
     "test": "jest -u --coverage",
     "test:dev": "jest --watch",
-    "webpack": "webpack -wd"
+    "webpack": "webpack -wd",
+    "build-webpack": "webpack -p",
+    "build-node": "babel lib -d build --copy-files"
   },
   "jest": {
     "setupFiles": [
@@ -24,6 +26,7 @@
     "babel-plugin-transform-regenerator": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
+    "babel-preset-stage-2": "^6.24.1",
     "coveralls": "^3.0.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
