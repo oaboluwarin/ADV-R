@@ -6,11 +6,14 @@
   "author": "oreoluwade",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_PATH=./lib babel-watch lib/server.js",
+    "dev": "NODE_PATH=./lib pm2 start lib/server.js --watch --interpreter babel-node --name adrDev",
     "lint": "eslint ./ || true",
     "test": "jest -u --coverage",
     "test:dev": "jest --watch",
-    "webpack": "webpack -wd"
+    "webpack": "webpack -wd",
+    "build-webpack": "webpack -p",
+    "build-node": "babel lib -d build --copy-files",
+    "start": "NODE_ENV=production NODE_PATH=./build pm2 start build/server.js -i max --name adrProd"
   },
   "jest": {
     "setupFiles": [
@@ -24,6 +27,7 @@
     "babel-plugin-transform-regenerator": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
+    "babel-preset-stage-2": "^6.24.1",
     "coveralls": "^3.0.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -40,11 +44,11 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "babel-watch": "^2.0.7",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "lodash.debounce": "^4.0.8",
     "lodash.pickby": "^4.6.0",
+    "pm2": "^2.10.4",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "webpack": "^4.8.3"
